@@ -28,6 +28,8 @@ Structura aplicației este bazată pe un design modular și obiect-orientat, org
 4. **Clasa `Coș`**: Gestionează produsele adăugate în coșul de cumpărături și calcularea prețului total.
 5. **Clasa `ManagerBazaDeDate`**: Se ocupă de interacțiunea cu baza de date pentru stocarea și preluarea informațiilor legate de produse, utilizatori și comenzi.
 
+![Diagrama UML](https://github.com/onica-lorena/Sistem-gestionare-magazin-online/blob/0b5e29c64d1ea01e39a53a3a0bff7d27188e3ddc/resources/Diagrama%20UML%20(1).png)
+
 Diagrama UML de mai sus ilustrează structura de bază a aplicației și relațiile dintre principalele clase, oferind o perspectivă vizuală asupra arhitecturii și interacțiunilor dintre componente.
 
 
