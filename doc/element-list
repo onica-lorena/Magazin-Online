@@ -1,0 +1,5 @@
+com.myapp.store.component
+com.myapp.store.controller
+com.myapp.store.model
+com.myapp.store.service
+com.myapp.store.view
