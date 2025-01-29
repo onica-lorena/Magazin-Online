@@ -1,1 +1,10 @@
+Copyright (C) 2025 Onica Lorena-Andreea
+
+Acest software este proprietatea exclusivă a Onica Lorena-Andreea și este protejat de drepturile de autor.
+Nu este permisă copierea, distribuirea, modificarea sau utilizarea acestui cod în scopuri comerciale 
+sau personale fără permisiunea expresă a autorului.
+
+Orice utilizare neautorizată este interzisă și poate fi supusă acțiunilor legale.
+
+Pentru întrebări sau solicitări de utilizare, vă rugăm să contactați onica.lorena05@gmail.com.
 
