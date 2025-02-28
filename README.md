@@ -98,3 +98,8 @@ Aplicația include teste unitare și funcționale folosind JUnit.
 - Testare autentificare utilizatori (`UtilizatorServiceTest`)
 - Testare adăugare produs în coș (`ProdusServiceTest`)
 - Testare finalizare comandă (`ComandaServiceTest`)
+
+---
+
+## Documentație
+Documentația completă a proiectului este disponibilă [aici](./doc/index-all.html).
