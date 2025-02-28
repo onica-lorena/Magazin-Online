@@ -44,6 +44,10 @@ Această aplicație este destinată gestionării unui magazin online de îmbrăc
 
 ---
 
+## Arhitectura Proiectului
+
+![Diagrama de componente](https://github.com/onica-lorena/Magazin-Online/blob/4353408b0db0d9a9da6ec9baa9b7f8dd95e4c7b3/resources/Component%20diagram%20(2).png)
+
 ## Cum să rulezi aplicația
 
 ### **1. Cerințe preliminare**
