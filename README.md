@@ -1,54 +1,100 @@
-# Magazin online
-O aplicație desktop completă pentru gestionarea unui magazin online.
-## Descriere
-Aplicația desktop pentru gestionarea unui magazin online este proiectată să simplifice și să eficientizeze toate procesele de administrare și vânzare, adresându-se atât clienților, cât și administratorilor. Clienții pot explora cu ușurință un catalog de produse bine organizat, având la dispoziție opțiuni pentru a căuta și filtra articolele dorite. Detaliile fiecărui produs, precum prețul, descrierea și disponibilitatea în stoc, sunt afișate clar, ajutând utilizatorii să ia decizii de cumpărare informate. După ce își adaugă produsele dorite în coșul de cumpărături, clienții pot plasa comenzi, iar sistemul actualizează automat stocurile.
+# Magazin Online
 
-Administratorii, pe de altă parte, au un set de instrumente pentru gestionarea eficientă a magazinului. Aceștia pot adăuga, edita sau elimina produse din catalog, având totodată posibilitatea de a actualiza descrierile, prețurile și cantitățile disponibile. De asemenea, aplicația le permite să monitorizeze și să ajusteze stocurile pentru a preveni epuizarea acestora. 
-
-Sistemul include un mecanism de autentificare care diferențiază între clienți și administratori, asigurând accesul corespunzător fiecărui tip de utilizator. Clienții își pot consulta istoricul comenzilor pentru a verifica detalii despre achizițiile trecute. Astfel, aplicația oferă o experiență prietenoasă și organizată, facilitând atât achizițiile online pentru clienți, cât și administrarea eficientă a magazinului pentru manageri.
-
-
-
-## Obiective
-Scopul aplicației este să ofere o platformă ușor de utilizat atât pentru clienți, cât și pentru administratori, în vederea gestionării eficiente a unui magazin online. Obiectivele principale sunt:
-
-* Crearea unui sistem de administrare a produselor și comenzilor pentru un magazin online.
-* Oferirea unui flux eficient pentru gestionarea coșului de cumpărături și a comenzilor pentru utilizatori.
-* Implementarea unui sistem de autentificare care să permită diferențierea între rolurile de client și administrator.
-* Asigurarea unui mediu prietenos și ușor de folosit pentru clienți în ceea ce privește navigarea și achiziționarea produselor.
-* Oferirea administratorilor instrumente pentru gestionarea inventarului și comenzilor în mod eficient.
-
-
-## Arhitectura
-Structura aplicației este bazată pe un design modular și obiect-orientat, organizat în următoarele componente principale:
-
-1. **Clasa `Produs`**: Gestionează detaliile unui produs(nume, descriere, preț, cantitate).
-2. **Clasa `Utilizator`**: Reprezintă utilizatorii aplicației (client sau administrator) și rolul fiecăruia.
-3. **Clasa `Comanda`**: Conține detalii despre o comandă efectuată(produse, total, data).
-4. **Clasa `Coș`**: Gestionează produsele adăugate în coșul de cumpărături și calcularea prețului total.
-5. **Clasa `ManagerBazaDeDate`**: Se ocupă de interacțiunea cu baza de date pentru stocarea și preluarea informațiilor legate de produse, utilizatori și comenzi.
-
-![Diagrama UML](https://github.com/onica-lorena/Sistem-gestionare-magazin-online/blob/0b5e29c64d1ea01e39a53a3a0bff7d27188e3ddc/resources/Diagrama%20UML%20(1).png)
-
-Diagrama UML de mai sus ilustrează structura de bază a aplicației și relațiile dintre principalele clase, oferind o perspectivă vizuală asupra arhitecturii și interacțiunilor dintre componente.
-
+Această aplicație este destinată gestionării unui magazin online de îmbrăcăminte și accesorii, oferind funcționalități pentru clienți și administratori, precum plasarea comenzilor, gestionarea produselor și urmărirea istoricului de achiziții.
 
 ## Funcționalități
 
-1. **Autentificarea Utilizatorilor**:
-   - Sistemul permite autentificarea și verificarea rolului fiecărui utilizator (client sau administrator).
-     
-2. **Gestionarea Catalogului de Produse**:
-   - Administratorii pot adăuga, vizualiza, modifica și șterge produse, actualizând informațiile legate de descriere, preț și stoc.
+### 1. **Pentru Clienți**
+- **Autentificare și înregistrare**
+  - Crearea unui cont nou.
+  - Autentificare utilizatori existenți.
+- **Vizualizare produse**
+  - Filtrare produse după categorie.
+  - Căutare rapidă după nume.
+- **Gestionarea coșului de cumpărături**
+  - Adăugarea și eliminarea produselor.
+  - Actualizarea cantităților din coș.
+  - Calcularea automată a totalului comenzii.
+- **Plasarea comenzilor**
+  - Confirmarea și trimiterea comenzilor.
+  - Actualizarea automată a stocurilor.
+- **Istoric comenzi**
+  - Vizualizarea comenzilor anterioare.
+  - Detalii despre data achiziției și valoarea totală.
 
-3. **Vizualizarea Detaliilor Produselor**:
-   - Clienții pot vizualiza detalii despre produse, inclusiv descrierea, prețul și cantitatea disponibilă și pot căuta și filtra produsele.
+### 2. **Pentru Administratori**
+- **Gestionarea produselor**
+  - Adăugare, editare și ștergere produse.
+  - Actualizarea stocurilor și prețurilor.
+- **Gestionarea utilizatorilor**
+  - Modificarea rolurilor (client/admin).
+  - Vizualizarea și administrarea conturilor utilizatorilor.
+- **Gestionarea comenzilor**
+  - Vizualizarea comenzilor plasate.
+  - Confirmarea și procesarea comenzilor.
 
-4. **Gestionarea Coșului de Cumpărături**:
-   - Utilizatorii pot adăuga sau elimina produse în coș, cu calcul automat al totalului comenzii.
+---
 
-5. **Plasarea Comenzilor**:
-   - Clienții finalizează comanda, iar stocurile produselor se actualizează automat.
+## Structura Proiectului
 
-6. **Istoricul Comenzilor**:
-   - Utilizatorii pot consulta detalii despre comenzile anterioare.
+### **Tehnologii Utilizate**
+- **Frontend:** Java Swing (Interfață Grafică)
+- **Backend:** Java SE (Logica aplicației)
+- **Bază de date:** SQLite (Stocarea datelor)
+
+---
+
+## Cum să rulezi aplicația
+
+### **1. Cerințe preliminare**
+Pentru a rula această aplicație, ai nevoie de:
+- **Java Development Kit (JDK) 11+** *(pentru compilare și rulare)*
+- **Eclipse sau IntelliJ IDEA** *(pentru dezvoltare și debugging)*
+- **SQLite Database Browser** *(opțional, pentru vizualizarea bazei de date)*
+- **Git** *(pentru clonarea proiectului din GitHub)*
+
+---
+
+### **2. Instalarea proiectului**
+1. **Clonează repository-ul utilizând Git:**
+   ```bash
+   git clone https://github.com/onica-lorena/Magazin-Online
+   cd Magazin-Online
+2. **Deschide proiectul într-un mediu de dezvoltare:**
+- **În Eclipse:**
+   ```plaintext
+   File → Open Projects from File System → Selectează folderul proiectului
+- **În IntelliJ IDEA:**
+   ```plaintext
+   File → Open → Selectează folderul proiectului
+3. **Adaugă driverul SQLite (dacă nu este deja inclus în proiect):**
+   - Descarcă driverul de pe [sqlite-jdbc]([https://github.com](https://github.com/xerial/sqlite-jdbc))
+   - Adaugă-l în proiect:
+   ```plaintext
+   Project Structure → Libraries → Add .jar
+4. **Rulează aplicația:**
+   ```bash
+   java -jar OnlineStore.jar
+
+---
+
+## Testare Automată
+
+Aplicația include teste unitare și funcționale folosind JUnit.
+
+**Pentru a rula toate testele:**
+   ```bash
+   mvn test
+   ```
+**În mediile de dezvoltare:**
+- Eclipse:   
+   ```plaintext
+   Run → Run as JUnit Test
+- IntelliJ IDEA:
+   ```plaintext
+   Alt + Shift + F10 → Selectează testele și rulează-le
+
+**Exemple de teste existente:**
+- Testare autentificare utilizatori (`UtilizatorServiceTest`)
+- Testare adăugare produs în coș (`ProdusServiceTest`)
+- Testare finalizare comandă (`ComandaServiceTest`)
