@@ -102,4 +102,4 @@ Aplicația include teste unitare și funcționale folosind JUnit.
 ---
 
 ## Documentație
-Documentația completă a proiectului este disponibilă [aici](./doc/index-all.html).
+Documentația completă a proiectului este disponibilă [aici](./doc).
