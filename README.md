@@ -1,4 +1,4 @@
-# Sistem-gestionare-magazin-online
+# Magazin online
 O aplicație desktop completă pentru gestionarea unui magazin online.
 ## Descriere
 Aplicația desktop pentru gestionarea unui magazin online este proiectată să simplifice și să eficientizeze toate procesele de administrare și vânzare, adresându-se atât clienților, cât și administratorilor. Clienții pot explora cu ușurință un catalog de produse bine organizat, având la dispoziție opțiuni pentru a căuta și filtra articolele dorite. Detaliile fiecărui produs, precum prețul, descrierea și disponibilitatea în stoc, sunt afișate clar, ajutând utilizatorii să ia decizii de cumpărare informate. După ce își adaugă produsele dorite în coșul de cumpărături, clienții pot plasa comenzi, iar sistemul actualizează automat stocurile.
